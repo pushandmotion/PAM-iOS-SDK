@@ -2,3 +2,12 @@
 
 
 # PAM-iOS-SDK
+
+Installation
+--------------
+### Carthage:
+In your `Cartfile` add:
+
+```
+github "pushandmotion/PAM-iOS-SDK"
+```
