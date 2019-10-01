@@ -54,6 +54,8 @@ public class PAMEvent{
         formData.customData["screen_width"] = "\(Int(screenBound.width))"
         formData.customData["screen_height"] = "\(Int(screenBound.height))"
 
+        formData.customData["_device_id"] = PAM.main.getDeviceUUID()
+
         #if DEBUG
             formData.customData["app_environment"] = "Development"
         #else

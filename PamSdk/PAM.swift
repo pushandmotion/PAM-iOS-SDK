@@ -21,7 +21,7 @@ public class PAM {
     private var pushNotiKeyMediaAlias: String?
 
     private var cacheContactID: String? = nil
-
+    
     private static var _instance: PAM?
     public static var main: PAM {
         get {
@@ -84,6 +84,10 @@ public class PAM {
         set {
             Logger.enableLog = newValue
         }
+    }
+
+    public func getDeviceUUID()->String?{
+        return deviceUUID
     }
 
     public func askNotificationPermissionIfNeeded(mediaAlias:String ,pushKeyCallBack: @escaping RegisterPushNotiCallback) {
