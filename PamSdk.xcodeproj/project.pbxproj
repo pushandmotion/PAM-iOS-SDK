@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0953F05F23421D12005109A9 /* PAMContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953F05E23421D12005109A9 /* PAMContactModel.swift */; };
 		0965316F233C807F00B5F696 /* PamSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09653165233C807F00B5F696 /* PamSdk.framework */; };
 		09653174233C807F00B5F696 /* PamSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09653173233C807F00B5F696 /* PamSdkTests.swift */; };
 		09653176233C807F00B5F696 /* PamSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 09653168233C807F00B5F696 /* PamSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,6 +19,7 @@
 		09653192233C86F600B5F696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09653190233C86F600B5F696 /* LaunchScreen.storyboard */; };
 		0965319D233C86F600B5F696 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0965319C233C86F600B5F696 /* ExampleTests.swift */; };
 		096531A8233C86F600B5F696 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096531A7233C86F600B5F696 /* ExampleUITests.swift */; };
+		09DCA96F2340A3F400B23B51 /* device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DCA96E2340A3F400B23B51 /* device.swift */; };
 		09FE1D04233C9B2100ED7964 /* PAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FE1D03233C9B2100ED7964 /* PAM.swift */; };
 		09FE1D06233CA12A00ED7964 /* PamSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09653165233C807F00B5F696 /* PamSdk.framework */; };
 		09FE1D08233CA7DC00ED7964 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FE1D07233CA7DC00ED7964 /* Logger.swift */; };
@@ -52,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0953F05E23421D12005109A9 /* PAMContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAMContactModel.swift; sourceTree = "<group>"; };
 		09653165233C807F00B5F696 /* PamSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PamSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09653168233C807F00B5F696 /* PamSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PamSdk.h; sourceTree = "<group>"; };
 		09653169233C807F00B5F696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		096531A7233C86F600B5F696 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		096531A9233C86F600B5F696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09BDDE05233CEC5D002DF17D /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
+		09DCA96E2340A3F400B23B51 /* device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = device.swift; sourceTree = "<group>"; };
 		09FE1D03233C9B2100ED7964 /* PAM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAM.swift; sourceTree = "<group>"; };
 		09FE1D07233CA7DC00ED7964 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		09FE1D09233CB49900ED7964 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 		09DCA958234094F100B23B51 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				09DCA96E2340A3F400B23B51 /* device.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			children = (
 				09FE1D0E233CBF5200ED7964 /* PAMEvent.swift */,
 				09FE1D10233CC07500ED7964 /* Form.swift */,
+				0953F05E23421D12005109A9 /* PAMContactModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -431,9 +437,11 @@
 				09FE1D04233C9B2100ED7964 /* PAM.swift in Sources */,
 				09FE1D08233CA7DC00ED7964 /* Logger.swift in Sources */,
 				09FE1D0F233CBF5200ED7964 /* PAMEvent.swift in Sources */,
+				0953F05F23421D12005109A9 /* PAMContactModel.swift in Sources */,
 				09FE1D0A233CB49900ED7964 /* Type.swift in Sources */,
 				09FE1D0C233CBC6100ED7964 /* APIClient.swift in Sources */,
 				09FE1D11233CC07500ED7964 /* Form.swift in Sources */,
+				09DCA96F2340A3F400B23B51 /* device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
