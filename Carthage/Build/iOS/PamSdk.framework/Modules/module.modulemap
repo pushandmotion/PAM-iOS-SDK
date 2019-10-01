@@ -1,0 +1,11 @@
+framework module PamSdk {
+  umbrella header "PamSdk.h"
+
+  export *
+  module * { export * }
+}
+
+module PamSdk.Swift {
+    header "PamSdk-Swift.h"
+    requires objc
+}

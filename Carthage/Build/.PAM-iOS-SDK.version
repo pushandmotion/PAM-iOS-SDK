@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "7a1c0d602483577c37947a9ad06efa019a8ef60d",
+  "iOS" : [
+    {
+      "name" : "PamSdk",
+      "hash" : "95399aae6188504131d4a01cf91f9b763a9a93a5c110c9f269dc550d4dd03729",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+    }
+  ]
+}
