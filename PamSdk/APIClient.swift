@@ -42,8 +42,8 @@ class APIClient {
     }
 
     func sendEvent(event: PAMEvent) {
-        guard let apiURL = getEventAPIURL() else {return}
-        guard let url = URL(string: apiURL ) else {return}
+        guard let apiURL = getEventAPIURL() else { return }
+        guard let url = URL(string: apiURL) else { return }
 
         let jsonBody = try? JSONSerialization.data(withJSONObject: event.toDictionary(), options: .prettyPrinted)
 
@@ -56,14 +56,15 @@ class APIClient {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
 
         urlSession.dataTask(with: request) { data, response, error in
-            
-            if let data = data{
+
+            if let data = data {
                 let decode = JSONDecoder()
-                let contactModel = try! decode.decode(PAMContactModel.self, from: data)
-                DispatchQueue.main.sync {
-                    if let contactID = contactModel.contactID{
-                        PAM.main.saveContactID(id: contactID)
-                        Logger.log("Contact ID = ", contactID)
+                if let contactModel = try? decode.decode(PAMContactModel.self, from: data) {
+                    DispatchQueue.main.sync {
+                        if let contactID = contactModel.contactID {
+                            PAM.main.saveContactID(id: contactID)
+                            Logger.log("Contact ID = ", contactID)
+                        }
                     }
                 }
             }
